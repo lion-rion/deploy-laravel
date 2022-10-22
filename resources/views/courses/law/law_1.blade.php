@@ -140,7 +140,7 @@ sda.Fill(dt);
 								</div> -->
 
                                 <p>正しい手順を踏んで脆弱性を発見することができれば、セキュリティ業界に誰でも貢献することができるのです。正しい倫理観を持って、いつか脆弱性の検挙ができるよう頑張りましょう！</p>
-                                <p>この章は以上です。キーワードは「step」です。</p>
+                                <p>この章は以上です。キーワードは「law」です。</p>
                                 <div class="content-wrap">
                                     <form action="#">
                                         <input name="clear" type="text" placeholder="キーワード">
