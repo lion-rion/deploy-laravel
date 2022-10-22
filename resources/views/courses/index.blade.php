@@ -51,6 +51,7 @@
             </div>
         </div>
         </a>
+        <a href="#"></a>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="our-team">
                 <div class="picture">
@@ -63,5 +64,6 @@
                 </div>
             </div>
         </div>
+    </a>
     </div>
 </div>
