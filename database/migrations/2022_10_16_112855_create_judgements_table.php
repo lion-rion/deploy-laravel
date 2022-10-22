@@ -27,7 +27,7 @@ class CreateJudgementsTable extends Migration
             $table->boolean('xss_2_clear')->default(false);
             $table->boolean('xss_3')->default(false);
             $table->boolean('xss_3_clear')->default(false);
-            $table->boolean('sql_1')->default(True);
+            $table->boolean('sql_1')->default(false);
             $table->boolean('sql_1_clear')->default(false);
             $table->boolean('sql_2')->default(false);
             $table->boolean('sql_2_clear')->default(false);
