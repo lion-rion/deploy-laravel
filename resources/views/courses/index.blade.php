@@ -60,7 +60,7 @@
                     <h3 class="course_name">XSS</h3>
                 </div>
                 <div class="social">
-                    <p class="course_detail"><Span style="color: red">重大な脆弱性が見つかったので一時非公開になっています</Span></p>
+                    <p class="course_detail">>重大な脆弱性が見つかったので一時非公開になっています</p>
                 </div>
             </div>
         </div>
