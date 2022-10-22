@@ -34,7 +34,7 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
-
+        
         $judge = Judgement::create();
         $request->validate([
             'name' => 'required|string|max:255',
@@ -43,6 +43,8 @@ class RegisteredUserController extends Controller
         ]);
 
         $user = User::create([
+
+        
             'judgements_id' => $judge->id,
             'name' => $request->name,
             'email' => $request->email,
