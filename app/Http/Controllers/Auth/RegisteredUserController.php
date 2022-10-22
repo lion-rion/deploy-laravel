@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
+use App\Models\Judgement;
 
 class RegisteredUserController extends Controller
 {
@@ -33,6 +34,8 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
+
+        $judge = Judgement::create();
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
@@ -40,6 +43,7 @@ class RegisteredUserController extends Controller
         ]);
 
         $user = User::create([
+            'judgements_id' => $judge->id,
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
