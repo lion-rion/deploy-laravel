@@ -6,6 +6,7 @@ a{
 
 body{
     background-color: #FAFAFA;
+    margin: 0;
 }
 
 .course_name{
@@ -256,8 +257,6 @@ body{
 
 /*固定エリア*/
 
-@charset "utf-8";
-
 /*========= レイアウトのためのCSS ===============*/
 
 h1,h2{
@@ -265,7 +264,7 @@ h1,h2{
 }
 
 h2,
-#container p,
+#container-2 p,
 small{
   margin:0 0 30px 0;
 }
@@ -289,21 +288,191 @@ small{
     position: -webkit-sticky;/*Safari用*/
     position: sticky;
   top:0;
-  /*横半分50%縦を100vhにする*/
+  /*横半分50%　縦を100vhにする*/
   width: 50%;
   height: 100vh;
   /*装飾のためのCSS*/
   display: flex;
   justify-content: center;
   align-items: center;
-  background:url("http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-4/img/daniel-chen-546446-unsplash.jpg") no-repeat center;
   background-size:cover;
-  color:#fff;
+  color:black;
+  background-color: #f2f2f2;
 }
 
 /*右エリア*/
-#container{
+#container-2{
+    padding: 100px;
   /*横半分50%にする*/
   width:50%;
 }
 /*右各セク
+
+
+*/
+
+@text: #111;
+@base: #f4f4f4;
+@link: #2a3644;
+@button: #f26964;
+@bottom: #ab4b47;
+
+.rounded (@radius: 6px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+      -ms-border-radius: @radius;
+       -o-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.trans (@transition: .1s) {
+  -webkit-transition: all @transition ease-in-out;
+     -moz-transition: all @transition ease-in-out;
+          transition: all @transition ease-in-out;
+ 
+}
+
+* {
+  border:none;
+  list-style:none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font:15px/1.25 'Alef';
+  color:@text;
+}
+
+form {
+  margin:70px auto;
+  background:@link;
+  width:347px;
+  text-align:center;
+  padding:40px;
+  .rounded;
+}
+
+form > h1 {
+  color:@base;
+  text-shadow:1px 1px 0px rgba(0, 0, 0, 0.7);
+  font-weight:400;
+  margin-bottom:20px;
+}
+
+input {
+  background:rgba(0, 0, 0, 0.2);
+  color:black;
+  text-shadow:1px 1px 0px rgba(0, 0, 0,0.3);
+  display:block;
+  width:269px;
+  padding:15px;
+  font-size: ;
+  margin-bottom:10px;
+  .rounded;
+  .trans;
+  outline:none;
+}
+
+input:focus {
+  background:rgba(0, 0, 0, 0.1);
+  .trans;
+}
+
+::-webkit-input-placeholder {
+   color: rgba(225, 225, 225, 0.4);
+}
+
+:-moz-placeholder {
+   color: rgba(225, 225, 225, 0.4); 
+}
+
+::-moz-placeholder {
+   color: rgba(225, 225, 225, 0.4);
+}
+
+:-ms-input-placeholder {  
+   color: rgba(225, 225, 225, 0.4);
+}
+
+button {
+  position:relative;
+  display:block;
+  margin-top:15px;
+  margin-bottom:15px;
+  padding:17px;
+  width:270px;
+  .rounded;
+  .trans;
+  font-size:1.2em;
+  background:@button;
+  color:@base;
+  box-shadow:0px 3px 0px @bottom;
+  cursor:pointer;
+}
+
+button:active {
+  top:3px;
+  box-shadow:none;
+}
+
+
+
+
+
+
+/*header*/
+.brand {
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 20px; }
+   
+  .site-header {
+    position: relative;
+    background-color: #def7ff; 
+margin-bottom: 150px;}
+   
+  .site-header__wrapper {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+    @media (min-width: 600px) {
+      .site-header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0; } }
+  @media (min-width: 600px) {
+    .nav__wrapper {
+      display: flex; } }
+   
+  @media (max-width: 599px) {
+    .nav__wrapper {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      z-index: -1;
+      background-color: #d9f0f7;
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+      .nav__wrapper.active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0); } }
+   
+  .nav__item a {
+    display: block;
+    padding: 1.5rem 1rem; }
+   
+  .nav__toggle {
+    display: none; }
+    @media (max-width: 599px) {
+      .nav__toggle {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem; } }

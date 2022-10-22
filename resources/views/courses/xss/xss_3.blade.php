@@ -57,20 +57,14 @@
   <div id="fixed-area"><!--右エリア-->
     <form>
         
-        <h1>Login Menu</h1>
-        <input name="username" type="text" placeholder="Username"/>
-        <input name="password" type="password" placeholder="Password"/>
-        <button>Login</button>
+        <h1>検索メニュー</h1>
+        <input name="text" type="text" placeholder="text"/>
         <?php 
-        if(isset($_GET['username'])){
-        $username = $_GET['username'];
-        $password = $_GET['password'];
-        if($username == 'penerabo' && $password == 'penerabo_password'){
-            echo 'ログイン成功！！キーワードは「start」だよ！';
-        }else{
-            echo 'ログイン失敗';
+        if(isset( $_GET['text'])){
+          echo "「".$_GET['text']."」の検索結果はありません";
         }
-        }?>
+        
+        ?>
       </form>
   <!--/container--></div>
 <!--/wrapper--></div>
