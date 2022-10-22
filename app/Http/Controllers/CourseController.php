@@ -27,7 +27,7 @@ class CourseController extends Controller
         $answer = $request->input('clear');
         if(isset($answer)){
             switch ($answer){
-                case 'step':
+                case 'law':
                     //law_1_clearを1に変更
                     $judge = Judgement::find(\Auth::user()->judgements_id);
                     $judge->law_1_clear = 1;
@@ -36,7 +36,7 @@ class CourseController extends Controller
                     $judge->sql_1 = 1;
                     $judge->save();
                     //$msg = '正解です！';
-                    return view("courses.law.index");
+                    return view("courses.law.index", ['judge' => $judge]);
                 case 'yyy':
                     //law_1_clearを1に変更
                     $judge = Judgement::find(\Auth::user()->judgements_id);
@@ -44,7 +44,7 @@ class CourseController extends Controller
                     $judge->law_3 = 1;
                     $judge->save();
                     $msg = "正解です";
-                    return view("courses.law.index");
+                    return view("courses.law.index", ['judge' => $judge]);
                 case 'zzz':
                     $judge = Judgement::find(\Auth::user()->judgements_id);
                     $judge->law_3_clear = 1;
@@ -78,14 +78,14 @@ class CourseController extends Controller
                     $judge->sql_2 = 1;
                     $judge->save();
                     $msg = "正解です";
-                    return view("courses.sql.index");
+                    return view("courses.sql.index", ['judge' => $judge]);
                 case 'step':
                     $judge = Judgement::find(\Auth::user()->judgements_id);
                     $judge->sql_2_clear = 1;
                     $judge->sql_3 = 1;
                     $judge->save();
                     $msg = "正解です";
-                    return view("courses.sql.index");
+                    return view("courses.sql.index", ['judge' => $judge]);
                 case 'sqli':
                     $judge = Judgement::find(\Auth::user()->judgements_id);
                     $judge->sql_3_clear = 1;
