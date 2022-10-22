@@ -51,19 +51,20 @@
             </div>
         </div>
         </a>
-        <a href="#"></a>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="our-team">
-                <div class="picture">
-                    <img class="img-fluid" src="https://static.vecteezy.com/system/resources/previews/006/843/150/original/xss-attack-black-glyph-icon-cross-site-scripting-software-attack-client-side-code-injection-malware-computer-damage-silhouette-symbol-on-white-space-isolated-illustration-vector.jpg">
-                <div class="team-content">
-                    <h3 class="course_name">XSS</h3>
-                </div>
-                <div class="social">
-                    <p class="course_detail">>重大な脆弱性が見つかったので一時非公開になっています</p>
+        <a href="#">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="https://static.vecteezy.com/system/resources/previews/006/843/150/original/xss-attack-black-glyph-icon-cross-site-scripting-software-attack-client-side-code-injection-malware-computer-damage-silhouette-symbol-on-white-space-isolated-illustration-vector.jpg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="course_name">XSS</h3>
+                    </div>
+                    <div class="social">
+                        <p class="course_detail">重大な脆弱性が見つかったので一時非公開になっています。</p>
+                    </div>
                 </div>
             </div>
+            </a>
         </div>
-    </a>
-    </div>
 </div>
