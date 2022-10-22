@@ -27,7 +27,7 @@ Route::get('/courses', [CourseController::class, 'index']);
 Route::get('/courses/{course}',  [CourseController::class, 'show'])->middleware(['auth']);
 
 //それぞれのコースのステージ別ページへのルーティング
-Route::get('/courses/{course}/{course2}', [CourseController::class, 'detail'])->middleware(['auth']);
+Route::get('/courses/{course}/{course2}', [CourseController::class, 'detail'])->middleware(['auth'])->middleware('clear');
 
 Route::post('/courses/{course}/{course2}/update', [ClearController::class, 'clear']);
 
