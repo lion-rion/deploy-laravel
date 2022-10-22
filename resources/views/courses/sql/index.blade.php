@@ -40,7 +40,7 @@
         </div>
         <img style="margin-left: 200px" width="70%" src="https://pbs.twimg.com/media/FfpTwonVQAAmGp7?format=png&name=large" alt="">
         <div class="btn_container">
-            <a href="sql/sql_1" class="btn-flat-border">第1ステージを学習する</a>
+            <a href="https://xs387222.xsrv.jp/courses/sql/sql_1" class="btn-flat-border">第1ステージを学習する</a>
         </div>
         @endif
         @if($judge->sql_1 != 1)
@@ -66,7 +66,7 @@
         <img style="margin-left: 200px" width="70%" src="https://pbs.twimg.com/media/FfpTwVIUAAEefOs?format=png&name=large" alt="">
         
         <div class="btn_container">
-            <a href="sql/sql_2" class="btn-flat-border">第2ステージを学習する</a>
+            <a href="https://xs387222.xsrv.jp/courses/sql/sql_2" class="btn-flat-border">第2ステージを学習する</a>
         </div>
         @endif
 
@@ -92,7 +92,7 @@
         <img style="margin-left: 200px" width="70%" src="https://pbs.twimg.com/media/FfpTwDiUoAAENO_?format=png&name=large" alt="">
         
         <div class="btn_container">
-            <a href="sql/sql_3" class="btn-flat-border">第3ステージを学習する</a>
+            <a href="https://xs387222.xsrv.jp/courses/sql/sql_3" class="btn-flat-border">第3ステージを学習する</a>
         </div>
         @endif
 
